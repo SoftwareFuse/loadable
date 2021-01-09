@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loadable - Documentation</title>
+    <link rel="stylesheet" href="docs.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Getting Started</a></li>
+            <li><a href="#">Documentation</a></li>
+        </ul>
+    </nav>
+    <section class="downloads">
+        <h1>Download Options</h1>
+        <div class="button-group">
+            <button class="min"><a href="loadable.min.js.zip" download>Minified (v1.0)</a></button>
+            <button class="regular"><a href="loadable.js.zip" download>Regular (v1.0)</a></button>
+            <button class="helper"><a href="loadable-helper.js.zip" download>Helper (v1.0)</a></button>
+            <button class="min-helper"><a href="loadable-helper.min.js.zip" download>Minified Helper (v1.0)</a></button>
+            <button class="bundle"><a href="loadable_bundle.zip" download>Download Bundle</a></button>
+        </div>
+    </section>
+    <section class="getstarted">
+        <h1>Getting Started</h1>
+        <ul>
+            <li>
+                <h4>Start by importing the loadable file in your html file</h4>
+                <img src="example1.png" />
+            </li>
+            <li>
+                <h4>Create a loaders.js file. This is where you will write your LoadableJS code.</h4>
+            </li>
+            <li>
+                <h4>Now declare a new instance of Loader like this:</h4>
+                <img src="example2.png" />
+        </li>
+            <li>
+                <h4>The Loader object needs 1 argument. This argument is the entry point of where it will load in all the files. This entry point must be an HTML file.</h4>
+                <h4>Everything you load with LoadableJS will load into the entry point HTML file.</h4>
+                <img src="example3.png" />
+            </li>
+            <li>
+                <h4>You can load in libraries or files with the .load() method.</h4>
+                <h4>The .load() method takes in two arguments. The first is the name of the loader (You can name it anything you want, but it is mandatory.) The second argument, is the route of the file. This is where you put the filename or CDN url in.</h4>
+                <h4>If you wanted to load in your stylesheet named "main.css", then you could write this line of code:</h4>
+                <img src="example4.png" />
+            </li>
+            <li>
+                <h4>Nice! Now remember to load loaders.js before any other script besides LoadableJS.</h4>
+                <img src="example5.png" />
+            </li>
+            
+        </ul>
+    </section>
+
+    <h4 class="end">View our GitHub repo at: <a href="https://github.com/SoftwareFuse/loadable">https://github.com/SoftwareFuse/loadable</a></h4>
+
+    <script>
+
+    </script>
+</body>
+</html>

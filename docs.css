@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;0,700;1,500&display=swap');
+
+
+*
+{
+    font-family: 'Ubuntu', arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+nav
+{
+    background: rgb(255, 86, 86);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    box-shadow: 0 4px 12px #00000050;
+}
+nav ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    list-style: none;
+}
+nav ul li a
+{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    font-size: 1.6em;
+    margin: auto 1em;
+}
+nav ul li a::after
+{
+    content: "";
+    width: 0%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(255, 112, 112);
+    height: 3px;
+    transition: .4s;
+    bottom: -6px;
+}
+nav ul li a:hover::after
+{
+    width: 100%;
+}
+
+@media (max-width: 760px)
+{
+    nav ul li a
+    {
+        font-size: 1.2em;
+        margin: auto .6em;
+    }
+    nav ul
+    {
+        width: 100%;
+    }
+    nav
+    {
+        height: 60px;
+    }
+}
+
+@media (max-width: 400px)
+{
+    nav ul li a
+    {
+        font-size: 1em;
+        margin: auto .4em;
+    }
+}
+
+
+
+
+
+.downloads
+{
+    width: 100%;
+    padding: 6em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.4em;
+    border-bottom: 1px solid #ddd;
+}
+.downloads h1
+{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.downloads .button-group
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 700px;
+}
+.downloads button
+{
+    font-size: 1.4em;
+    width: max-content;
+    padding: .2em .6em;
+    cursor: pointer;
+    margin: .4em;
+    border: none;
+    background: rgb(255, 86, 86);
+    border-radius: 6px;
+    box-shadow: 0 0 12px 2px #00000030;
+}
+.downloads button a
+{
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+section.getstarted
+{
+    padding: 3em;
+    width: 100%;
+}
+section.getstarted h1
+{
+    font-size: 2.6em;
+    margin-bottom: 1em;
+}
+.getstarted ul
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.getstarted ul li
+{
+    margin-bottom: 5em;
+}
+.getstarted ul li h4
+{
+    font-size: 1.3em;
+    text-align: left;
+    margin-bottom: 1em;
+}
+/* images in examples made with carbon. https://carbon.now.sh */
+.getstarted ul li img
+{
+    width: 100%;
+    max-width: 500px;
+    min-width: 300px;
+}
+.end
+{
+    font-size: 1.6em;
+    text-align: center;
+    margin: 2em auto;
+}
