@@ -103,6 +103,5 @@ class Loader {
       );
     }
 
-    this.x = 5;
   }
 }
