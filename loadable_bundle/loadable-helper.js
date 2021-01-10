@@ -145,6 +145,6 @@ class LoaderHelper {
       );
     }
 
-    this.x = 5;
+
   }
 }
